@@ -1,37 +1,106 @@
-.navbar{
+.navbar {
     overflow: hidden;
     background-color: bisque;
 }
 
-.navbar a{
+.rowh img {
+    width: 400px;
+    height: 300px;
+    padding: 0px;
+}
+
+.rowh img:hover {
+    opacity: 0.7;
+    border: solid black;
+}
+
+label {
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+}
+
+.navbar a {
     float: right;
-    color:red;
+    color: red;
     text-align: center;
     padding: 14px 16px;
     font-size: 25px;
     text-decoration: none;
 }
 
-.navbar a:hover{
+.navbar a:hover {
     background-color: teal;
     color: whitesmoke;
 }
 
+.navbar a.logo {
+    float: left;
+}
+
 .header {
-    padding: 80px;
+    overflow: hidden;
+    height: 400px;
     text-align: center;
     background-color: beige;
     color: black;
 }
 
-.content1{
-
+.texth {
+    position: absolute;
+    float: inline-start;
+    font-size: 120px;
 }
 
-footer{
+.rowh {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sideh {
+    flex: 30%;
+    background-color: rgb(172, 172, 172);
+    padding: 20px;
+}
+
+.mainh {
+    flex: 65%;
+    background-color: white;
+    padding: 20px;
+}
+
+.judul {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+footer {
     background-color: saddlebrown;
     font-size: 20px;
     color: white;
     padding: 10px;
     text-align: center;
+}
+
+.sideh img {
+    display: block;
+    padding: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
 }
