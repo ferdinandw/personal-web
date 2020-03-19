@@ -1,0 +1,37 @@
+.navbar{
+    overflow: hidden;
+    background-color: bisque;
+}
+
+.navbar a{
+    float: right;
+    color:red;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    background-color: teal;
+    color: whitesmoke;
+}
+
+.header {
+    padding: 80px;
+    text-align: center;
+    background-color: beige;
+    color: black;
+}
+
+.content1{
+
+}
+
+footer{
+    background-color: saddlebrown;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
